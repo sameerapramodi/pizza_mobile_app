@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmg"
+    tools:context=".Home">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="411dp"
+        android:layout_height="128dp"
+        app:cardBackgroundColor="#E6D38F"
+        app:cardCornerRadius="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-8dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="164dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingStart="16dp"
+            android:paddingTop="40dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:text="Welcome,"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:paddingStart="180dp"
+            android:paddingTop="70dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:text="Andre"
+            android:textColor="#930A0A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:paddingStart="40dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/profile" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="409dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- LinearLayout to arrange buttons horizontally -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFC107"
+                android:text="All" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FAF7F4"
+                android:text="Pizza"
+                android:textColor="#FFC107" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F8F8F8"
+                android:text="Burger"
+                android:textColor="#FFC107"
+                app:rippleColor="#3A1313" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/createyour"
+        android:layout_width="189dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="212dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="13dp"
+            android:paddingTop="120dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Create Your Own Pizza"
+            android:textColor="#BA0C0C"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="145dp"
+            android:layout_height="110dp"
+            android:paddingStart="50dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/pizza01" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingTop="150dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="10dp"
+            android:text="Choose from your options of"
+            android:textColor="#070604"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="32dp"
+            android:paddingTop="164dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:text="make your Pan Pizza"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mexican"
+        android:layout_width="189dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="12dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingTop="120dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Mexican Green Wave"
+            android:textColor="#326835"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="32dp"
+            android:paddingTop="164dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:text="mushrooms, tomatoes "
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingTop="150dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="10dp"
+            android:text="Crisp Capsicum, succulent  "
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="145dp"
+            android:layout_height="110dp"
+            android:paddingStart="50dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/pizza2" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="189dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="12dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingTop="120dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Margherita Pizza"
+            android:textColor="#326835"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="32dp"
+            android:paddingTop="164dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:text="chicken,tomato sauce. "
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingTop="150dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="10dp"
+            android:text="Crafted with a marinated  "
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="165dp"
+            android:layout_height="120dp"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/margherita" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="189dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="688dp"
+        android:layout_marginEnd="212dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="45dp"
+            android:paddingTop="120dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Veggie Delight"
+            android:textColor="#326835"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="32dp"
+            android:paddingTop="164dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:text="loaded with veggies "
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingTop="150dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="10dp"
+            android:text="Melted cheese, olive and"
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/olive"
+            android:layout_width="165dp"
+            android:layout_height="120dp"
+            android:paddingStart="30dp"
+            android:paddingTop="20dp"
+            app:srcCompat="@drawable/olive" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="189dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="688dp"
+        android:layout_marginEnd="12dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="45dp"
+            android:paddingTop="120dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Pepperoni Pizza"
+            android:textColor="#326835"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="32dp"
+            android:paddingTop="164dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:text="with cream cheese, garlic"
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingTop="150dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="10dp"
+            android:text="pepperoni slices topped "
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/pizza03"
+            android:layout_width="165dp"
+            android:layout_height="120dp"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/pizza03" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chicken"
+        android:layout_width="189dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="212dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="45dp"
+            android:paddingTop="120dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Chicken Pizza"
+            android:textColor="#326835"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="32dp"
+            android:paddingTop="164dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:text="chicken,tomato sauce. "
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingTop="150dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="10dp"
+            android:text="Crafted with a marinated  "
+            android:textColor="#676363"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="165dp"
+            android:layout_height="120dp"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/chicken" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <SearchView
+        android:layout_width="269dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="132dp"
+        android:background="#000000"
+        android:backgroundTint="#F4F2E8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="55dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/favicon" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
