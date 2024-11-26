@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 public class oder_method extends AppCompatActivity {
 
@@ -13,6 +14,17 @@ public class oder_method extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oder_method);
+
+        // Back Button (bckbtn)
+        ImageView backbtn = findViewById(R.id.backbtn);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // When back button is clicked, navigate to create_pizza activity
+                Intent intent = new Intent(oder_method.this, create_pizza.class);
+                startActivity(intent);
+            }
+        });
 
         // Dine-In Button
         CardView btnDineIn = findViewById(R.id.dinein);

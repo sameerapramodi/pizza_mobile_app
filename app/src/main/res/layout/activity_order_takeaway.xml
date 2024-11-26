@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Your Order"
+        android:text="Your T/A Order"
         android:textColor="#ad1e24"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -320,14 +320,6 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/cart" />
-
-            <ImageView
-                android:id="@+id/imageView16"
-                android:layout_width="16dp"
-                android:layout_height="36dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/favicon" />
 
             <ImageView
                 android:id="@+id/imageView18"

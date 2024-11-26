@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/backbtn"
         android:layout_width="50dp"
         android:layout_height="41dp"
         android:layout_marginTop="20dp"
@@ -130,16 +130,16 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="372dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="750dp"
-        android:layout_marginEnd="12dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="772dp"
+        android:layout_marginEnd="20dp"
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="58dp"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="4">
@@ -151,14 +151,6 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/cart" />
-
-            <ImageView
-                android:id="@+id/imageView16"
-                android:layout_width="16dp"
-                android:layout_height="36dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/favicon" />
 
             <ImageView
                 android:id="@+id/imageView18"
@@ -178,7 +170,6 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

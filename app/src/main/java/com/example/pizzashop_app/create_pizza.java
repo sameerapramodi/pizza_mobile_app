@@ -1,83 +1,123 @@
 package com.example.pizzashop_app;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;  // Add import for ContextCompat
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import androidx.cardview.widget.CardView;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class create_pizza extends AppCompatActivity {
 
-    // Declare variables for the CardViews
-    private CardView card1, card2, card3, card4, card5, card6;
-    private CardView selectedCard; // To keep track of the selected card
+    // Declare your CardView elements
+    private CardView[] cardViews;
 
-    @SuppressLint("MissingInflatedId")
+    // Declare ImageView elements for cart, order, profile, and back buttons
+    private ImageView cartImageView, orderImageView, profileImageView, backBtnImageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_pizza);
 
-        // Initialize CardViews (corrected card5 initialization)
-        card1 = findViewById(R.id.cardView1);
-        card2 = findViewById(R.id.cardView2);
-        card3 = findViewById(R.id.cardView3);
-        card4 = findViewById(R.id.cardView4);
-        card5 = findViewById(R.id.cardView5);
-        card6 = findViewById(R.id.cardView6);  // card6 added correctly
+        // Initialize the CardView array with the IDs of your cards
+        cardViews = new CardView[] {
+                findViewById(R.id.cardView1),  // 7 inch card
+                findViewById(R.id.cardView2),  // 8 inch card
+                findViewById(R.id.cardView3),  // 9 inch card
+                findViewById(R.id.cardView4),  // Crust Type Card
+                findViewById(R.id.cardView5),  // Sauce Type Card
+                // Add more cards here if needed
+        };
 
-        // Initialize back button and next button
-        ImageView backBtn = findViewById(R.id.backbtn);
-        Button nextBtn = findViewById(R.id.Next);
+        // Set the initial color of the cards (all default color)
+        for (CardView cardView : cardViews) {
+            cardView.setCardBackgroundColor(getResources().getColor(R.color.default_card_color));
+        }
 
-        // Set click listeners for all cards
-        setupCardClickListener(card1);
-        setupCardClickListener(card2);
-        setupCardClickListener(card3);
-        setupCardClickListener(card4);
-        setupCardClickListener(card5);
-        setupCardClickListener(card6);  // Ensure card6 is included
+        // Set up click listeners for each CardView to change its color when clicked
+        for (CardView cardView : cardViews) {
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // When a card is clicked, set its background color to the selected color
+                    for (CardView otherCardView : cardViews) {
+                        // Reset all cards to the default color
+                        if (otherCardView == cardView) {
+                            otherCardView.setCardBackgroundColor(getResources().getColor(R.color.selected_card_color));
+                        } else {
+                            otherCardView.setCardBackgroundColor(getResources().getColor(R.color.default_card_color));
+                        }
+                    }
+                }
+            });
+        }
 
-        // Back button functionality
-        backBtn.setOnClickListener(new View.OnClickListener() {
+        // Initialize ImageViews for cart, order, profile, and back buttons
+        cartImageView = findViewById(R.id.imageView15);
+        orderImageView = findViewById(R.id.imageView18);
+        profileImageView = findViewById(R.id.imageView17);
+        backBtnImageView = findViewById(R.id.backbtn);  // Back button
+
+        // Set onClick listeners for each ImageView to navigate to respective activities
+        cartImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Start the CartActivity when the cart button is clicked
+                Intent cartIntent = new Intent(create_pizza.this, cart.class);
+                startActivity(cartIntent);
+            }
+        });
+
+        orderImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the OrderActivity when the order button is clicked
+                Intent orderIntent = new Intent(create_pizza.this, order.class);
+                startActivity(orderIntent);
+            }
+        });
+
+        profileImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the ProfileActivity when the profile button is clicked
+                Intent profileIntent = new Intent(create_pizza.this, profile.class);
+                startActivity(profileIntent);
+            }
+        });
+
+        // Set onClick listener for the "Back" button to navigate to the home screen
+        backBtnImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the HomeActivity (MainActivity) when the back button is clicked
+                Intent homeIntent = new Intent(create_pizza.this, Home.class);  // Home screen or main screen
+                startActivity(homeIntent);
+            }
+        });
+
+        // Find the Next button
+        Button btn = findViewById(R.id.Next);
+
+        // Set up click listener for the "Next" button to move to the next activity
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the next activity (order method screen)
+                Intent intent = new Intent(create_pizza.this, oder_method.class);
+                startActivity(intent);
+            }
+        });
+        // Beverages Button onClickListener
+        Button addButton = findViewById(R.id.add);  // Beverages button ID
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start BeveragesActivity when Beverages button is clicked
                 Intent intent = new Intent(create_pizza.this, Home.class);
                 startActivity(intent);
-                finish();
-            }
-        });
-
-        // Next button functionality
-        nextBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(create_pizza.this, cart.class);
-                startActivity(intent);
-            }
-        });
-    }
-
-    // Helper method to set up click listeners for each card
-    private void setupCardClickListener(CardView card) {
-        card.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (selectedCard != null) {
-                    // Reset the previously selected card's background color
-                    selectedCard.setCardBackgroundColor(ContextCompat.getColor(create_pizza.this, R.color.default_card_color)); // Use ContextCompat.getColor
-                }
-
-                // Highlight the clicked card
-                card.setCardBackgroundColor(ContextCompat.getColor(create_pizza.this, R.color.selected_card_color)); // Use ContextCompat.getColor
-
-                // Update the selected card reference
-                selectedCard = card;
             }
         });
     }

@@ -7,7 +7,7 @@
     android:background="@drawable/bgmg"
     tools:context=".order">
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/backbtn"
         android:layout_width="50dp"
         android:layout_height="41dp"
         android:layout_marginTop="20dp"
@@ -286,10 +286,10 @@
 
     <Button
         android:id="@+id/dineinorderconfirm"
-        android:layout_width="378dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="636dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="388dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="12dp"
         android:backgroundTint="#ad1e24"
         android:text="Order Confirm"
         android:textColor="#FFFFFF"
@@ -320,14 +320,6 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/cart" />
-
-            <ImageView
-                android:id="@+id/imageView16"
-                android:layout_width="16dp"
-                android:layout_height="36dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/favicon" />
 
             <ImageView
                 android:id="@+id/imageView18"

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgmg"
-    tools:context=".Home">
-
+    tools:context=".beverages">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView8"
@@ -61,6 +60,38 @@
             app:srcCompat="@drawable/profile" />
 
     </androidx.cardview.widget.CardView>
+    <SearchView
+        android:layout_width="269dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="132dp"
+        android:background="#000000"
+        android:backgroundTint="#F4F2E8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="88dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="48dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pro" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="55dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -81,11 +112,13 @@
 
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/pizza"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
-                android:backgroundTint="#FFC107"
+                android:textColor="#FFC107"
+                app:rippleColor="#3A1313"
+                android:backgroundTint="#F8F8F8"
                 android:text="Pizza Menu" />
 
 
@@ -95,10 +128,10 @@
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
-                android:backgroundTint="#F8F8F8"
+
                 android:text="Beverages"
-                android:textColor="#FFC107"
-                app:rippleColor="#3A1313" />
+                android:backgroundTint="#FFC107"
+                 />
 
 
         </LinearLayout>
@@ -106,8 +139,8 @@
 
 
     <ScrollView
-        android:layout_width="408dp"
-        android:layout_height="633dp"
+        android:layout_width="412dp"
+        android:layout_height="603dp"
         android:layout_marginTop="244dp"
         android:background="#FFFFFF"
         android:padding="8dp"
@@ -139,7 +172,7 @@
                         android:layout_height="80dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/pizza03" />
+                        android:src="@drawable/coca" />
 
                     <TextView
                         android:id="@+id/pizzaName1"
@@ -147,7 +180,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@id/pizzaImage1"
-                        android:text="Neapolitan pizza (Small)"
+                        android:text="Cocacola (Small)"
                         android:textColor="#000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -169,7 +202,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:text="RS.1600.00"
+                        android:text="RS.600.00"
                         android:textColor="#FF5722"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -213,7 +246,7 @@
                         android:layout_height="80dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/olive" />
+                        android:src="@drawable/sprite" />
 
                     <TextView
                         android:id="@+id/pizzaName2"
@@ -221,7 +254,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@id/pizzaImage2"
-                        android:text="Chicken Pizza (Small)"
+                        android:text="Sprite (Small)"
                         android:textColor="#000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -233,7 +266,7 @@
                         android:layout_below="@id/pizzaName2"
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@id/pizzaImage2"
-                        android:text="Chicken pizza with fresh cheese"
+                        android:text="Matches with Chicken pizza"
                         android:textColor="#757575"
                         android:textSize="14sp" />
 
@@ -243,7 +276,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:text="RS.1600.00"
+                        android:text="RS.600.00"
                         android:textColor="#FF5722"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -286,7 +319,7 @@
                         android:layout_height="80dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/pizza2" />
+                        android:src="@drawable/orange" />
 
                     <TextView
                         android:id="@+id/pizzaName3"
@@ -294,7 +327,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@id/pizzaImage3"
-                        android:text="Mexican Green Wave Pizza "
+                        android:text="Orange Crush "
                         android:textColor="#000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -316,7 +349,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:text="RS.1600.00"
+                        android:text="RS.600.00"
                         android:textColor="#FF5722"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -357,7 +390,7 @@
                         android:layout_height="80dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/margherita" />
+                        android:src="@drawable/lime" />
 
                     <TextView
                         android:id="@+id/pizzaName21"
@@ -365,7 +398,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@id/pizzaImage21"
-                        android:text="Margherita Pizza"
+                        android:text="Lime Juice"
                         android:textColor="#000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -377,7 +410,7 @@
                         android:layout_below="@id/pizzaName21"
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@id/pizzaImage21"
-                        android:text="Classic margherita with cheese"
+                        android:text="Matches with Classic margherita with cheese"
                         android:textColor="#757575"
                         android:textSize="14sp" />
 
@@ -387,7 +420,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:text="RS.1700.00"
+                        android:text="RS.700.00"
                         android:textColor="#FF5722"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -428,7 +461,7 @@
                         android:layout_height="80dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/hawainp" />
+                        android:src="@drawable/coffee" />
 
                     <TextView
                         android:id="@+id/pizzaName20"
@@ -436,7 +469,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@id/pizzaImage20"
-                        android:text="Hawaiian pizza"
+                        android:text="Coffee"
                         android:textColor="#000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -448,7 +481,7 @@
                         android:layout_below="@id/pizzaName20"
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@id/pizzaImage20"
-                        android:text="Classic pizza with olive, cheese"
+                        android:text="Matches with Classic pizza with olive, cheese"
                         android:textColor="#757575"
                         android:textSize="14sp" />
 
@@ -458,7 +491,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:text="RS.1500.00"
+                        android:text="RS.500.00"
                         android:textColor="#FF5722"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -480,183 +513,8 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/c6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="12dp">
-
-                    <ImageView
-                        android:id="@+id/pizzaImage11"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/olive" />
-
-                    <TextView
-                        android:id="@+id/pizzaName11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_toEndOf="@id/pizzaImage11"
-                        android:text="Veggie Delight Pizza"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/pizzaDescription11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/pizzaName11"
-                        android:layout_marginStart="16dp"
-                        android:layout_toEndOf="@id/pizzaImage11"
-                        android:text="Classic pizza with vegies"
-                        android:textColor="#757575"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/pizzaPrice11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:text="RS.1400.00"
-                        android:textColor="#FF5722"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <RatingBar
-                        android:id="@+id/pizzaRating11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/pizzaDescription11"
-                        android:layout_marginStart="-24dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_toEndOf="@id/pizzaImage11"
-                        android:numStars="5"
-                        android:rating="4.0"
-                        android:scaleX="0.7"
-                        android:scaleY="0.7"
-                        android:stepSize="0.1"
-                        android:theme="@style/Widget.AppCompat.RatingBar.Small" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/c7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="12dp">
-
-                    <ImageView
-                        android:id="@+id/pizzaImage"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/pizza01" />
-
-                    <TextView
-                        android:id="@+id/pizzaName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_toEndOf="@id/pizzaImage"
-                        android:text="Pepperoni Pizza"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/pizzaDescription"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/pizzaName"
-                        android:layout_marginStart="16dp"
-                        android:layout_toEndOf="@id/pizzaImage"
-                        android:text="Classic margherita with sausage"
-                        android:textColor="#757575"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/pizzaPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:text="RS.1500.99"
-                        android:textColor="#FF5722"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <RatingBar
-                        android:id="@+id/pizzaRating"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/pizzaDescription"
-                        android:layout_marginStart="-29dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_toEndOf="@id/pizzaImage"
-                        android:numStars="5"
-                        android:rating="4.0"
-                        android:scaleX="0.7"
-                        android:scaleY="0.7"
-                        android:stepSize="0.1"
-                        android:theme="@style/Widget.AppCompat.RatingBar.Small" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-
         </LinearLayout>
     </ScrollView>
-
-    <SearchView
-        android:layout_width="269dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="132dp"
-        android:background="#000000"
-        android:backgroundTint="#F4F2E8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="88dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="48dp"
-        android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pro" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="55dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="16dp"
-        android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cart" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
