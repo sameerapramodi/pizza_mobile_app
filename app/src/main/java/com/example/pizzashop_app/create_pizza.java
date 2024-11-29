@@ -106,17 +106,7 @@ public class create_pizza extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start the next activity (order method screen)
-                Intent intent = new Intent(create_pizza.this, oder_method.class);
-                startActivity(intent);
-            }
-        });
-        // Beverages Button onClickListener
-        Button addButton = findViewById(R.id.add);  // Beverages button ID
-        addButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start BeveragesActivity when Beverages button is clicked
-                Intent intent = new Intent(create_pizza.this, Home.class);
+                Intent intent = new Intent(create_pizza.this, cart.class);
                 startActivity(intent);
             }
         });

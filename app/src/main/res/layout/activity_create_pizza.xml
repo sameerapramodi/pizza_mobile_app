@@ -55,18 +55,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/add"
-        android:layout_width="379dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="648dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#D58000"
-        android:text="Add more"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
@@ -131,7 +119,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="20dp"
             android:paddingTop="10dp"
-            android:text="7 inch"
+            android:text="15 inch"
             android:textColor="#070404"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -142,7 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingTop="12dp"
-            android:text="RS. 1000"
+            android:text="RS. 2000"
             android:textColor="#070404"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -165,7 +153,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingTop="12dp"
-            android:text="RS. 1000"
+            android:text="RS. 4000"
             android:textColor="#070404"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -176,7 +164,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="20dp"
             android:paddingTop="10dp"
-            android:text="7 inch"
+            android:text="16 inch"
             android:textColor="#070404"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -266,7 +254,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="20dp"
             android:paddingTop="10dp"
-            android:text="7 inch"
+            android:text="8 inch"
             android:textColor="#070404"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -277,7 +265,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingTop="12dp"
-            android:text="RS. 1000"
+            android:text="RS. 1100"
             android:textColor="#070404"
             android:textSize="14sp"
             android:textStyle="bold" />

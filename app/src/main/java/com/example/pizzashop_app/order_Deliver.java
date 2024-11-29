@@ -18,9 +18,10 @@ public class order_Deliver extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(order_Deliver.this, payment_delivery.class);
+                Intent intent = new Intent(order_Deliver.this, order_track.class);
                 startActivity(intent);
             }
         });
+
     }
 }

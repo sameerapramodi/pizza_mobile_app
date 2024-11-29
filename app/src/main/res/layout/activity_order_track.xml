@@ -43,9 +43,10 @@
         android:layout_width="375dp"
         android:layout_height="324dp"
         android:layout_margin="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView">
 
@@ -147,8 +148,8 @@
         android:id="@+id/estimatedDeliveryTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
         android:text="Estimated Delivery: 30 min"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -156,17 +157,29 @@
         app:layout_constraintTop_toBottomOf="@id/orderProgressCard" />
 
     <Button
+        android:id="@+id/paymentDoneButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Payment Done"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/cancelOrderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/cancelOrderButton"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_margin="16dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="92dp"
         android:backgroundTint="#ad1e24"
         android:text="Cancel Order"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
